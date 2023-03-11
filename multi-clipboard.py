@@ -1,30 +1,22 @@
-#!/usr/bin/env python3
-#
-#  [Program]
-#
-#  Multi Clipboard Program
-#
-#  [Author]
-#
-#  Drew, https://github.com/Ahendrix9624/
-#
-#  [License]
-#
-#  This program is free software; you can redistribute it and/or modify
-#  it under the terms of the GNU General Public License as published by
-#  the Free Software Foundation; either version 3 of the License, or
-#  any later version.
-#
-#  This program is distributed in the hope that it will be useful,
-#  but WITHOUT ANY WARRANTY; without even the implied warranty of
-#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#  GNU General Public License for more details.
-#
-#  You should have received a copy of the GNU General Public License
-#  along with this program; if not, write to the Free Software
-#  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-#
-#  See 'LICENSE' for more information.
+"""
+USAGE - This code is a Python script that saves and loads data from a JSON file, and interacts with 
+        the system clipboard using the clipboard module. The name of the JSON file is set to 
+        copied_clipboard.json.
+
+        The save_data() function saves data to the JSON file, while the load_data() function 
+        loads data from the JSON file.
+
+        The code checks if a valid command is passed as an argument when running the script, 
+        and performs the corresponding action. If the command is "save", the script prompts the 
+        user to enter a key and saves the current clipboard data under that key in the JSON file. 
+        If the command is "load", the script prompts the user to enter a key and copies the corresponding 
+        data from the JSON file to the clipboard. If the command is "list", the script prints the entire 
+        JSON file. If an unknown command is entered, the script prints "Unknown command".
+
+        If an invalid number of arguments is passed, the script prompts the user to pass exactly one command.
+
+AUTHOR - https://github.com/Ahendrix9624/
+"""
 
 import sys
 import clipboard 
